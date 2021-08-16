@@ -1,15 +1,9 @@
-import createModel from '@/utils/createModel'
-import { createSlice } from '@reduxjs/toolkit'
+import createSagaSlice from '@/utils/createSagaSlice'
 
 const initialState = {}
 
-const model = createSlice({
+export default createSagaSlice({
   name: 'global',
   initialState,
   reducers: {}
-})
-
-function *main() {
-}
-
-export default createModel(model, main);
+});

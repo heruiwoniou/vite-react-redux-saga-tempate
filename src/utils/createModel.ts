@@ -1,4 +1,3 @@
-
 export default (slice: any, saga: any) => () => {
 	return {
 		id: slice.name,

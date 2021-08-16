@@ -10,7 +10,7 @@ declare interface CreateSagaSliceOptions<State = any, CR extends SliceCaseReduce
 declare type createSagaSlice = <State, CaseReducers extends SliceCaseReducers<State>, Name extends string = string>(options: CreateSagaSliceOptions<State, CaseReducers, Name>) => () => {
 	id: any;
 	reducerMap: {
-		[x: number]: any;
+		[x: string]: any;
 	};
 	sagas: any[];
 };
